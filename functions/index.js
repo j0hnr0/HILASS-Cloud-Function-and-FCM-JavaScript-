@@ -39,6 +39,7 @@ exports.sendNotification = functions.region('asia-southeast1').firestore
         notification: {
           title: 'HILASS',
           body: `Lights unattended detected in ${location}!`,
+		  priorty: 'max',
           clickAction: 'com.example.hilass.MenuActivity',
         },
       };
