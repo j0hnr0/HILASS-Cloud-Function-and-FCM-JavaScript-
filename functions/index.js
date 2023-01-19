@@ -37,10 +37,9 @@ exports.sendNotification = functions.region('asia-southeast1').firestore
       // Set up the notification
       const payload = {
         notification: {
-          title: 'HILASS',
+          title: 'Lights! Lights!',
           body: `Lights unattended detected in ${location}!`,
-		  priorty: 'max',
-          clickAction: 'com.example.hilass.MenuActivity',
+          click_action: '.MenuActivity',
         },
       };
 
